@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div><img src="./assets/logoone.png" alt="Logo da Alura + ONE" width="400px"></div>
+    </header>
+    
+    <main class="apresentacao"> 
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Decodificador de Texto <strong class="titulo-destaque">Alura - ONE</strong></h1>
+
+            <div id="caixas-texto">
+                <textarea id="input-texto" placeholder="Digite a mensagem a ser codificada"></textarea>
+                <textarea id="resultado" readonly style="display: none;"></textarea>
+            </div>
+            <div id="alerta">
+                <p>Insira no apenas letras minúsculas e sem acento nos campos acima.</p>
+            </div>
+
+            <div class="botoes"> 
+                <button class="botao" id="criptografar">Criptografar</button>
+                <button class="botao" id="descriptografar">Descriptografar</button>
+                <button class="botao" id="copiar-resultado" style="display: none;">Copiar</button>
+            </div>
+
+            <div id="retorno">
+                <div id="nada">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite a mensagem a ser codificada</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por <a class="rodape__link" href="https://www.linkedin.com/in/nataliaoliveiradev/">Natalia Oliveira</a></p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
